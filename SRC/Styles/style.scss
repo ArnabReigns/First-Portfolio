@@ -224,7 +224,7 @@ nav
     
     #secondLottie
     {
-        width: 32vw;
+        width: 30vw;
 
         
     }
@@ -296,9 +296,11 @@ nav
             min-height:50vh ;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 10px;
-            grid-column-gap:1rem;
-            margin: 1rem 0rem;
+            grid-column-gap:0.8rem;
+            margin: 2rem 0rem;
+            
+            // grid-auto-rows:100rem;
+            
 
             h4 
             {
@@ -316,12 +318,17 @@ nav
                 grid-template-columns: 1fr 1fr 1fr;
                 background-color: rgba(41, 19, 19, 0.274);
                 // grid-auto-rows: 3rem;
-                position: relative;
+                // position: relative;
                 margin-top: 10px;
-                grid-row-gap: 1.5rem;
+                grid-row-gap: 1rem;
+                grid-column-gap: 5px;
                 justify-items: center;
                 padding: 1rem 1rem;
+                padding-top: 1.4rem;
                 border-radius: 10px;
+                overflow: visible;
+                grid-auto-rows: minmax(4rem,auto);
+
                 
 
 
@@ -331,30 +338,50 @@ nav
 
                     // background-color: wheat;
                     display: flex;
+                    position: relative;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: start;
                     align-items: center;
                     transition: all 0.1s;
+                    // width: fit-content;
                     // filter: grayscale(100%);
+                    // overflow: visible;
 
+                    
                     &:hover
                     {
-                        transform: scale(120%);
-                        filter: grayscale(0);
+                        transform: scale(130%);
+                        
+                        
                     }
 
+
+                    // &:hover::after
+                    //  {
+                    //     content: '';
+                    //     position:absolute;
+                    //     background-color: rgb(255, 253, 253);
+                    //     height: 4rem;
+                    //     width:4rem;
+                    //     opacity: 0.4;
+                        
+                    // }
+                   
 
 
                     img 
                     {
-                        height: 40px;
+                        height: 30px;
                     }
                     h5 
                     {
                         color:wheat;
                         font-family: 'Noto Sans';
-                        font-size: 0.7rem;
+                        // background-color: brown;
+                        // width: 100%;
+                        font-size: 0.6rem;
                         margin-top: 5px;
+                        text-align: center;
                     }
                 }
                 
