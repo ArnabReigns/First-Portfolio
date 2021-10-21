@@ -10,6 +10,7 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   overflow-x: hidden;
+  min-width: 10vw;
 }
 
 .nav-container nav {
@@ -173,6 +174,7 @@ body {
 }
 
 .second-container {
+  scroll-snap-align: start;
   width: 100vw;
   min-height: 100vh;
   background-color: #63021f;
@@ -186,18 +188,18 @@ body {
 }
 
 .second-container #secondLottie {
-  width: 40vw;
+  width: 32vw;
 }
 
 .second-container .description {
-  color: black;
-  margin-right: 9rem;
+  margin-right: 5rem;
   margin-bottom: 3rem;
+  margin-top: 5rem;
 }
 
 .second-container .description h2 {
   font-family: monospace;
-  font-size: 5rem;
+  font-size: 3rem;
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
   cursor: default;
@@ -224,28 +226,15 @@ body {
   font-weight: 500;
 }
 
-.second-container .description a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.second-container .description a h3 {
-  background-color: black;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: white;
-  padding: 5px 20px;
+.second-container .description h3 {
+  background-color: antiquewhite;
+  color: black;
+  padding: 5px 10px;
   border-radius: 5px;
-  font-weight: 500;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-  font-family: monospace;
+  font-size: 1.3rem;
+  margin-top: 3rem;
   text-transform: uppercase;
   font-family: 'Noto Sans';
-  -webkit-transition: background-color color font-weight 0.4s;
-  transition: background-color color font-weight 0.4s;
-  cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -253,21 +242,76 @@ body {
   user-select: none;
 }
 
-.second-container .description a h3:hover {
-  background-color: gold;
-  color: black;
-  font-weight: bolder;
-  -webkit-transition: all 0s;
-  transition: all 0s;
+.second-container .description .grid-container {
+  min-height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-column-gap: 1rem;
+  margin: 1rem 0rem;
 }
 
-.second-container .description a h3:active {
-  background-color: #b69b03;
+.second-container .description .grid-container h4 {
+  font-family: monospace;
+  font-size: 1rem;
+  color: white;
+  font-weight: 200;
+}
+
+.second-container .description .grid-container .nested-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgba(41, 19, 19, 0.274);
+  position: relative;
+  margin-top: 10px;
+  grid-row-gap: 1.5rem;
+  justify-items: center;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+}
+
+.second-container .description .grid-container .nested-grid div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.second-container .description .grid-container .nested-grid div:hover {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.second-container .description .grid-container .nested-grid div img {
+  height: 40px;
+}
+
+.second-container .description .grid-container .nested-grid div h5 {
+  color: wheat;
+  font-family: 'Noto Sans';
+  font-size: 0.7rem;
+  margin-top: 5px;
 }
 
 .third-container {
-  min-height: 100vh;
-  background-color: #0f87b6;
-  position: relative;
+  height: 100vh;
+  background-color: #1d7efd;
 }
 /*# sourceMappingURL=style.css.map */
