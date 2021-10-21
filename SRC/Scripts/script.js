@@ -149,14 +149,14 @@ function secondContainerAnimations()
     {
         scrollTrigger:
         {
-            trigger:'.grid-container',
+            trigger:'#skills',
             start:'20px bottom',
-            end:'bottom 20px',
+            end:'bottom top',
             // markers:true,
             toggleActions:'play complete resume reset'
         },
         duration:'0.5',
-        delay:'1.2',
+        delay:'1.1',
         scale:'0',
         opacity:'0',
         ease:Power4.easeOut,
@@ -166,9 +166,9 @@ function secondContainerAnimations()
     {
         scrollTrigger:
         {
-            trigger:'.grid-container',
+            trigger:'#skills',
             start:'20px bottom',
-            end:'bottom 20px',
+            end:'bottom top',
             // markers:true,
             toggleActions:'play complete resume reset'
         },
@@ -182,9 +182,10 @@ function secondContainerAnimations()
     {
         scrollTrigger:
         {
-            trigger:'.grid-container',
+            trigger:'#skills',
             start:'20px bottom',
-            end:'bottom 20px',
+            end:'bottom top',
+            
             // markers:true,
             toggleActions:'play complete resume reset'
         },
