@@ -1,16 +1,9 @@
 //plug-in register
 gsap.registerPlugin(ScrollTrigger);
 
-new fullpage('#fullpage', {
-	//options here
-	autoScrolling:true,
-});
-
-
 firstContainerAnimations()
 secondContainerAnimations()
-
-
+thirdContainerAnimations()
 
 //first-container animations
 
@@ -70,11 +63,23 @@ function firstContainerAnimations()
         delay:'1.2',
 
     })  
+
+
+    
 }
 
 //second container animations
 function secondContainerAnimations()
 {
+
+    function secondContainerToggled()
+    {
+        document.body.classList.toggle('redScrollbar')
+    }
+
+
+
+
     LottieInteractivity.create({
     mode: 'scroll',
     player: '#secondLottie',
@@ -95,7 +100,7 @@ function secondContainerAnimations()
             trigger:'.second-container',
             start:'50px bottom',
             end:'bottom 20px',
-            toggleActions:'play complete pause reset'
+            toggleActions:'play complete pause reset',
         },
         duration:'0.7',
         x:'-200px',
@@ -153,6 +158,36 @@ function secondContainerAnimations()
     //     ease:Power4.easeOut,
         
     // })
+
+    ScrollTrigger.create({
+        trigger: ".second-container",
+        start: "top center",
+        end: "bottom center",
+        onToggle: self => {
+            secondContainerToggled()
+        },
+        // onUpdate: self => {
+        //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+        // }
+      });
 }
 
+function thirdContainerAnimations()
+{
+    function thirdContainerToggled()
+    {
+        document.body.classList.toggle('blueScrollbar')
+    }
 
+    ScrollTrigger.create({
+        trigger: ".third-container",
+        start: "top center",
+        end: "bottom center",
+        onToggle: self => {
+            thirdContainerToggled()
+        },
+        // onUpdate: self => {
+        //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+        // }
+      });
+}

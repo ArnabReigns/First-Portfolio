@@ -215,8 +215,9 @@ body {
 .second-container .description p {
   font-family: 'Noto Sans Mono', monospace;
   font-family: 'Noto Sans', sans-serif;
-  margin-top: 1.5rem;
-  line-height: 180%;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
   color: #e7e7e7;

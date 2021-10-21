@@ -1,16 +1,16 @@
 
-body.open::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 15px;
     background-color:black ;
 
   }
-body.open::-webkit-scrollbar-thumb:hover
+body::-webkit-scrollbar-thumb:hover
 {
   background-color: rgb(112, 110, 110);
 }
 
 
-body.open::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     
     background-color: rgb(42, 241, 2);
     border-radius: 30px;
@@ -19,26 +19,45 @@ body.open::-webkit-scrollbar-track {
      margin: 3px;
   }
 
-body.open::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background: rgb(71, 71, 71);
     border-radius: 30px;
     box-shadow: inset 0px 0px 5px 2px black ;
   }
 
 
-body.open::-webkit-scrollbar-button {
+body::-webkit-scrollbar-button {
 
     display: none;
  }
 
-body.open::-webkit-scrollbar-track-piece {
+body::-webkit-scrollbar-track-piece {
 
  }
 
-body.open::-webkit-scrollbar-corner {
+body::-webkit-scrollbar-corner {
 
  }
 
-body.open::-webkit-resizer {
+body::-webkit-resizer {
 
  }    
+
+
+ body.redScrollbar::-webkit-scrollbar-track {
+    
+  background-color: rgb(241, 2, 2);
+  border-radius: 30px;
+  border: 0.01px solid rgb(65, 65, 65);
+  box-shadow: inset 0px 0px 1px 5.7px rgb(0, 0, 0) ;
+   margin: 3px;
+}
+
+body.blueScrollbar::-webkit-scrollbar-track {
+    
+  background-color: rgb(0, 174, 255);
+  border-radius: 30px;
+  border: 0.01px solid rgb(65, 65, 65);
+  box-shadow: inset 0px 0px 1px 5.7px rgb(0, 0, 0) ;
+   margin: 3px;
+}
