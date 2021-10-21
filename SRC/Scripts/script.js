@@ -5,6 +5,8 @@ firstContainerAnimations()
 secondContainerAnimations()
 thirdContainerAnimations()
 
+  
+
 //first-container animations
 
 function firstContainerAnimations()
@@ -77,21 +79,23 @@ function secondContainerAnimations()
         document.body.classList.toggle('redScrollbar')
     }
 
-
-
-
     LottieInteractivity.create({
-    mode: 'scroll',
-    player: '#secondLottie',
+        mode: 'scroll',
+        player: '#secondLottie',
+        
+        actions: [
+            {
     
-    actions: [
-        {
-        visibility: [0,1],
-        type: 'seek',
-        frames: [0, 60],
-        },
-    ],
-    });
+            
+            visibility: [0,1],
+            type: 'seek',
+            frames: [0, 60],
+            },
+        ],
+        });
+
+
+    
 
     gsap.from('#secondLottie',
     {
@@ -103,7 +107,7 @@ function secondContainerAnimations()
             toggleActions:'play complete pause reset',
         },
         duration:'0.7',
-        x:'-200px',
+        x:'-100px',
         opacity:'0',
         ease:Power4.easeOut,
         
@@ -140,24 +144,57 @@ function secondContainerAnimations()
         ease:Power4.easeOut,
         
     })
-    
 
-    // gsap.from('#aboutButton',
-    // {
-    //     scrollTrigger:
-    //     {
-    //         trigger:'.second-container',
-    //         start:'50px bottom',
-    //         end:'bottom 20px',
-    //         toggleActions:'play complete resume reset'
-    //     },
-    //     duration:'2',
-    //     // x:'100px',
-    //     delay:'0.5',
-    //     opacity:'0',
-    //     ease:Power4.easeOut,
+    gsap.from('.nested-grid',
+    {
+        scrollTrigger:
+        {
+            trigger:'.grid-container',
+            start:'20px bottom',
+            end:'bottom 20px',
+            // markers:true,
+            toggleActions:'play complete resume reset'
+        },
+        duration:'0.5',
+        delay:'1.2',
+        scale:'0',
+        opacity:'0',
+        ease:Power4.easeOut,
+    })
+
+    gsap.from('.grid-container',
+    {
+        scrollTrigger:
+        {
+            trigger:'.grid-container',
+            start:'20px bottom',
+            end:'bottom 20px',
+            // markers:true,
+            toggleActions:'play complete resume reset'
+        },
+        duration:'1',
+        delay:'1',
+        opacity:0,
+        ease:Power4.easeOut,
+    })
+
+    gsap.from('#skills',
+    {
+        scrollTrigger:
+        {
+            trigger:'.grid-container',
+            start:'20px bottom',
+            end:'bottom 20px',
+            // markers:true,
+            toggleActions:'play complete resume reset'
+        },
+        duration:'1',
+        delay:'0.3',
+        opacity:0,
+        width:'0px',
         
-    // })
+        ease:Power4.easeOut,
+    })
 
     ScrollTrigger.create({
         trigger: ".second-container",

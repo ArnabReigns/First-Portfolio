@@ -189,6 +189,7 @@ body {
 
 .second-container #secondLottie {
   width: 30vw;
+  z-index: 2000;
 }
 
 .second-container .description {
@@ -240,6 +241,8 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  overflow: hidden;
+  height: 2.2rem;
 }
 
 .second-container .description .grid-container {

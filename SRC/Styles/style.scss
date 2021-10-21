@@ -225,6 +225,7 @@ nav
     #secondLottie
     {
         width: 30vw;
+        z-index: 2000;
 
         
     }
@@ -287,8 +288,8 @@ nav
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
-
-           
+           overflow: hidden;
+           height: 2.2rem;
         }
         .grid-container
         {
