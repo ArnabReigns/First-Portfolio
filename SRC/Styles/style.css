@@ -1,0 +1,272 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: black;
+  background-size: cover;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow-x: hidden;
+}
+
+.nav-container nav {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  min-width: 100vw;
+  height: 7vh;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: #242424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-bottom: 1px solid lime;
+  z-index: 1000;
+}
+
+.nav-container .title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 2rem;
+  font-size: 1rem;
+  color: white;
+  font-family: monospace;
+}
+
+.nav-container .navOptions {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.nav-container #list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 3rem;
+}
+
+.nav-container .option {
+  text-decoration: none;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #1ba500;
+  padding: 5px 0.5rem;
+  font-family: 'Noto Sans Mono', monospace;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.nav-container .option:hover {
+  color: #45ff20;
+}
+
+.first-container {
+  width: 100vw;
+  min-height: 93vh;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.first-container .title-template {
+  color: white;
+  z-index: 10;
+  padding-left: 6%;
+  width: 50vw;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.first-container .title-template h2 {
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+  font-family: monospace;
+  font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  opacity: 1;
+  cursor: default;
+}
+
+.first-container .title-template p {
+  color: rgba(243, 188, 248, 0.603);
+  font-family: 'Noto Sans Mono', monospace;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 200;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+  cursor: default;
+  opacity: 1;
+  line-height: 150%;
+}
+
+.first-container .title-template p:hover {
+  color: rgba(243, 188, 248, 0.849);
+}
+
+.first-container .title-template p button {
+  background-color: rebeccapurple;
+}
+
+.first-container .title-template .link-icons {
+  margin-top: 3rem;
+  width: 300px;
+}
+
+.first-container .title-template .link-icons a {
+  margin-right: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.first-container .title-template .link-icons .fab {
+  color: #009e15;
+  font-size: 1.2rem;
+}
+
+.first-container .title-template .link-icons .fab:hover {
+  font-weight: bold;
+  color: #00d80b;
+  -webkit-transform: scale(150%);
+          transform: scale(150%);
+}
+
+.first-container #lot {
+  width: 50vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.first-container #lot:hover {
+  -webkit-transform: scale(102%);
+          transform: scale(102%);
+}
+
+.second-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #63021f;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-container #secondLottie {
+  width: 40vw;
+}
+
+.second-container .description {
+  color: black;
+  margin-right: 9rem;
+  margin-bottom: 3rem;
+}
+
+.second-container .description h2 {
+  font-family: monospace;
+  font-size: 5rem;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+  cursor: default;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: color 0.1s;
+}
+
+.second-container .description h2:hover {
+  color: #faf8f8;
+  -webkit-text-stroke: 2px black;
+}
+
+.second-container .description p {
+  font-family: 'Noto Sans Mono', monospace;
+  font-family: 'Noto Sans', sans-serif;
+  margin-top: 1.5rem;
+  line-height: 180%;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+  color: #e7e7e7;
+  font-weight: 500;
+}
+
+.second-container .description a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.second-container .description a h3 {
+  background-color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-family: 'Noto Sans';
+  -webkit-transition: background-color color font-weight 0.4s;
+  transition: background-color color font-weight 0.4s;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.second-container .description a h3:hover {
+  background-color: gold;
+  color: black;
+  font-weight: bolder;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+.second-container .description a h3:active {
+  background-color: #b69b03;
+}
+
+.third-container {
+  min-height: 100vh;
+  background-color: #0f87b6;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

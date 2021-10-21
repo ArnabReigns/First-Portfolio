@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body
+{
+    // background-color: rgb(0, 0, 0);
+    background: black;
+    background-size: cover;
+    transition: all 0.5s ;
+    // height: 300vh;
+    overflow-x: hidden;
+
+    
+}
+
+.nav-container
+{
+
+nav
+{
+    transform-origin: left;
+    min-width: 100vw;
+    height: 7vh;
+    backdrop-filter:blur(5px);
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid rgb(0, 255, 0);
+    z-index: 1000;
+    // overflow: hidden;
+}
+
+.title
+{
+    
+    
+    flex: 1;
+    padding-left: 2rem;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    // background-color: aqua;
+
+    
+    
+
+}
+
+
+.navOptions
+{
+    flex: 1;
+    position: relative;
+    // background-color: antiquewhite;
+}
+
+#list
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-right: 3rem;
+
+
+
+}
+
+.option
+{
+    text-decoration: none;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgb(27, 165, 0);
+    padding: 5px 0.5rem;
+    font-family: 'Noto Sans Mono', monospace;font-family: 'Noto Sans', sans-serif;
+
+    &:hover
+    {
+        color: rgb(69, 255, 32);
+        // font-weight: bolder;
+    }
+}
+
+}
+
+.first-container
+{
+    width: 100vw;
+    min-height: 93vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+
+
+    .title-template 
+    {
+        
+        color: white;
+        z-index: 10;
+        padding-left: 6%;
+        // overflow: hidden;
+        width:50vw;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        h2
+        {
+            font-size: 3rem;
+            padding-bottom: 1.5rem;
+            font-family: monospace;
+            font-weight: 500;
+            width: fit-content;
+            color: rgb(255, 255, 255);
+            opacity: 1;
+            // text-align: end;
+            cursor:default;
+            // background-color: aqua;
+        }
+
+        p 
+        {
+            
+            color: rgba(243, 188, 248, 0.603);
+            font-family: 'Noto Sans Mono', monospace;font-family: 'Noto Sans', sans-serif;
+            // background-color: aqua;
+            font-weight: 200;
+            // text-align: right;
+            transition: color 0.1s;
+            cursor:default;
+            opacity: 1;
+            line-height: 150%;
+
+
+            &:hover{
+                color:rgba(243, 188, 248, 0.849);
+            }
+
+            button 
+            {
+                background-color: rebeccapurple;
+
+            }
+        }
+
+        
+        .link-icons
+        {
+            margin-top: 3rem;
+            // background-color: aqua;
+            width:300px;
+            
+            a 
+            {
+                margin-right: 2rem ;
+                width: fit-content;
+                
+            }
+            
+            .fab
+                {
+                    
+                    color: rgb(0, 158, 21);
+                    font-size: 1.2rem;
+    
+                    &:hover
+                    {
+                        font-weight: bold;
+                        color: rgb(0, 216, 11);
+                        transform: scale(150%);
+                        
+                    }
+                    
+                }
+    
+        }
+        
+        
+    }
+
+    #lot
+    {
+        
+        // background-color: rgb(71, 71, 71);
+
+        width: 50vw;
+        height:fit-content;
+        opacity: 1;
+        transition: transform 0.3s;
+
+        &:hover
+        {
+            transform: scale(102%)
+        }
+
+    }
+
+    
+    
+    
+   
+}
+
+.second-container
+{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(99, 2, 31);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+   
+    
+    #secondLottie
+    {
+        width: 40vw;
+
+        
+    }
+
+    .description
+    {
+    
+        color: rgb(0, 0, 0);
+        margin-right: 9rem;
+        margin-bottom: 3rem;
+        // background-color: aqua;
+
+        h2 
+        {
+            font-family: monospace;
+            font-size: 5rem;
+            transition: color 0.1s;
+            cursor: default;
+            width: fit-content;
+            transition: color 0.1s;
+
+            &:hover
+            {
+                color: rgb(250, 248, 248);
+                -webkit-text-stroke: 2px black;
+            }
+
+            
+        }
+
+        p 
+        {
+            font-family: 'Noto Sans Mono', monospace;font-family: 'Noto Sans', sans-serif;
+            margin-top: 1.5rem;
+            line-height: 180%;
+            transition: color 0.1s;
+            color: rgb(231, 231, 231);
+            font-weight: 500;
+        } 
+        
+        a 
+            {
+                text-decoration: none;
+                color: inherit;
+
+                
+        h3
+        {
+            background-color: black;
+            width: fit-content;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            font-family: monospace;
+            text-transform: uppercase;
+            font-family: 'Noto Sans';
+            transition: background-color color font-weight 0.4s;
+            cursor: pointer;
+            // -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            &:hover
+            {
+                background-color: gold;
+                color: black;
+                font-weight: bolder;
+                transition: all 0s;
+            }
+
+            &:active
+            {
+                background-color: rgb(182, 155, 3);
+            }
+
+           
+        }
+    }
+            }
+
+}
+
+.third-container
+{
+    min-height: 100vh;
+    background-color: rgb(15, 135, 182);
+    position: relative;
+}
+
+
+
