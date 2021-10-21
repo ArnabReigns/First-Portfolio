@@ -89,7 +89,7 @@ function secondContainerAnimations()
             
             visibility: [0,1],
             type: 'seek',
-            frames: [0, 60],
+            frames: [15,70],
             },
         ],
         });

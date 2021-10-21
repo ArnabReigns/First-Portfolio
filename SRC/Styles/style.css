@@ -90,6 +90,7 @@ body {
       justify-content: space-around;
   background: url(/pexels-francesco-ungaro-998641.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .first-container .title-template {
@@ -188,11 +189,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.second-container #bottomright {
+  position: absolute;
+  bottom: 70px;
+  right: 15px;
+  width: 12rem;
+  height: 12rem;
 }
 
 .second-container #secondLottie {
   width: 30vw;
   z-index: 2000;
+  margin-right: 2rem;
 }
 
 .second-container .description {
@@ -211,11 +223,13 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   transition: color 0.1s;
+  color: #faf8f8;
+  -webkit-text-stroke: 2px black;
 }
 
 .second-container .description h2:hover {
-  color: #faf8f8;
-  -webkit-text-stroke: 2px black;
+  color: black;
+  -webkit-text-stroke: 0px white;
 }
 
 .second-container .description p {
@@ -226,8 +240,11 @@ body {
   line-height: 1.5rem;
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
-  color: #e7e7e7;
+  color: #fdfdfd;
   font-weight: 500;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 20px;
 }
 
 .second-container .description h3 {
@@ -246,6 +263,7 @@ body {
   user-select: none;
   overflow: hidden;
   height: 2.2rem;
+  width: 100%;
 }
 
 .second-container .description .grid-container {
