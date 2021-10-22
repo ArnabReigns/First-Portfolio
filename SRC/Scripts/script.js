@@ -79,20 +79,20 @@ function secondContainerAnimations()
         document.body.classList.toggle('redScrollbar')
     }
 
-    LottieInteractivity.create({
-        mode: 'scroll',
-        player: '#secondLottie',
+    // LottieInteractivity.create({
+    //     mode: 'scroll',
+    //     player: '#secondLottie',
         
-        actions: [
-            {
+    //     actions: [
+    //         {
     
             
-            visibility: [0,1],
-            type: 'seek',
-            frames: [15,70],
-            },
-        ],
-        });
+    //         visibility: [0,1],
+    //         type: 'seek',
+    //         frames: [15,70],
+    //         },
+    //     ],
+    //     });
 
 
     
@@ -122,7 +122,7 @@ function secondContainerAnimations()
             // markers:true,
             toggleActions:'play complete resume reset'
         },
-        duration:'0.5',
+        duration:'1',
         x:'200px',
         opacity:'0',
         ease:Power4.easeOut,
@@ -137,8 +137,8 @@ function secondContainerAnimations()
             end:'bottom 20px',
             toggleActions:'play complete resume reset'
         },
-        duration:'0.5',
-        delay:'0.3',
+        duration:'0.8',
+        delay:'0.5',
         y:'100px',
         opacity:'0',
         ease:Power4.easeOut,
@@ -155,7 +155,7 @@ function secondContainerAnimations()
             // markers:true,
             toggleActions:'play complete resume reset'
         },
-        duration:'0.5',
+        duration:'0.8',
         delay:'1.1',
         scale:'0',
         opacity:'0',
@@ -190,7 +190,7 @@ function secondContainerAnimations()
             toggleActions:'play complete resume reset'
         },
         duration:'1',
-        delay:'0.3',
+        delay:'0.8',
         opacity:0,
         width:'0px',
         

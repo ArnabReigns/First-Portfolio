@@ -226,7 +226,7 @@ nav
     background-color: rgb(99, 2, 31);
     background-size: cover;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     position: relative;
     overflow: hidden;
     
@@ -240,25 +240,57 @@ nav
         right:15px;
         width: 12rem;
         height:12rem;
+        opacity: 0.5;
     }
    
     
-    #secondLottie
-    {
-        width: 30vw;
-        z-index: 2000;
-        margin-right: 2rem;
+    // #secondLottie
+    // {
+    //     width: 30vw;
+    //     z-index: 2000;
+    //     margin-right: 2rem;
 
         
+    // }
+
+
+    .about-img
+    {
+        flex: 1;
+        background-color: aliceblue;
+        overflow: hidden;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        // width: 20rem;
+        // height:50rem;
+        border-top-left-radius:20px ;
+        border-bottom-left-radius:20px ;
+
+
+        img 
+        {
+            // margin: 5rem;
+            // width: 10rem;
+            height: 100%;
+            border-top-right-radius:20px ;
+
+        }
     }
+
 
     .description
     {
     
         
-        margin-right: 5rem;
+        margin-right: 3rem;
         margin-bottom: 3rem;
-        margin-top: 5rem;
+        margin-top: 3rem;
+        flex: 5;
+        overflow: hidden;
+        // max-width: 70vw;
+        // background-color: aliceblue;
         // background-color: aqua;
 
         h2 
@@ -289,12 +321,13 @@ nav
             margin-top: 1rem;
             font-size: 0.9rem;
             line-height: 1.5rem;
+            width: 90%;
             transition: color 0.1s;
             color: rgb(253, 253, 253);
             font-weight: 500;
             font-weight: 500;
             // background-color: rgba(59, 55, 55, 0.979);
-            padding: 1rem;
+            // padding: 1rem;
             border-radius: 20px;
         } 
 
@@ -319,7 +352,7 @@ nav
             user-select: none;
            overflow: hidden;
            height: 2.2rem;
-           width: 100%;
+           width:100%;
 
            
         }
