@@ -78,40 +78,7 @@ function secondContainerAnimations()
     {
         document.body.classList.toggle('redScrollbar')
     }
-
-    // LottieInteractivity.create({
-    //     mode: 'scroll',
-    //     player: '#secondLottie',
-        
-    //     actions: [
-    //         {
     
-            
-    //         visibility: [0,1],
-    //         type: 'seek',
-    //         frames: [15,70],
-    //         },
-    //     ],
-    //     });
-
-
-    
-
-    // gsap.from('#secondLottie',
-    // {
-    //     scrollTrigger:
-    //     {
-    //         trigger:'.second-container',
-    //         start:'50px bottom',
-    //         end:'bottom 20px',
-    //         toggleActions:'play complete pause reset',
-    //     },
-    //     duration:'0.7',
-    //     x:'-100px',
-    //     opacity:'0',
-    //     ease:Power4.easeOut,
-        
-    // })
     gsap.from('#helloThere',
     {
         scrollTrigger:
