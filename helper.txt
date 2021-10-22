@@ -1,6 +1,1 @@
-//     particlesJS.load('particles-js', 'node_modules/particles.js/particlesjs-config.json', function() {
-//     console.log('callback - particles.js config loaded');
-//   });
-
-// add this cdns - <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <script src="./node_modules/particles.js/particles.js"></script> -->
-//add 'particles-js' id on any component to load particles 
+font-family: 'Nova Mono', monospace;

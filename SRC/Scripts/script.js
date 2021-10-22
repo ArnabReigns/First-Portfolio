@@ -1,16 +1,20 @@
 //plug-in register
 gsap.registerPlugin(ScrollTrigger);
 
+//main
 firstContainerAnimations()
 secondContainerAnimations()
 thirdContainerAnimations()
 
   
 
-//first-container animations
+
+//defined functions
 
 function firstContainerAnimations()
 {
+    //entry animations
+
     gsap.from('#name',{
     
         x:'-20rem',
@@ -19,6 +23,7 @@ function firstContainerAnimations()
         
         
     })
+
     gsap.fromTo('#name',
     {
         opacity:0
@@ -30,7 +35,6 @@ function firstContainerAnimations()
         ease: 'power3.out',
         delay:0.1,
     })
-
 
     gsap.from('#para',{
 
@@ -58,6 +62,7 @@ function firstContainerAnimations()
         delay:'1.2'
     
     })
+
     gsap.from('#lot',
     {
         duration:'2',
@@ -70,15 +75,11 @@ function firstContainerAnimations()
     
 }
 
-//second container animations
 function secondContainerAnimations()
 {
 
-    function secondContainerToggled()
-    {
-        document.body.classList.toggle('redScrollbar')
-    }
-    
+    //entry animations
+
     gsap.from('#helloThere',
     {
         scrollTrigger:
@@ -95,6 +96,7 @@ function secondContainerAnimations()
         ease:Power4.easeOut,
         
     })
+
     gsap.from('#aboutDes',
     {
         scrollTrigger:
@@ -116,10 +118,9 @@ function secondContainerAnimations()
     {
         scrollTrigger:
         {
-            trigger:'#skills',
-            start:'20px bottom',
-            end:'bottom top',
-            // markers:true,
+            trigger:'.second-container',
+            start:'50px bottom',
+            end:'bottom 20px',
             toggleActions:'play complete resume reset'
         },
         duration:'0.8',
@@ -133,10 +134,9 @@ function secondContainerAnimations()
     {
         scrollTrigger:
         {
-            trigger:'#skills',
-            start:'20px bottom',
-            end:'bottom top',
-            // markers:true,
+            trigger:'.second-container',
+            start:'50px bottom',
+            end:'bottom 20px',
             toggleActions:'play complete resume reset'
         },
         duration:'1',
@@ -145,36 +145,54 @@ function secondContainerAnimations()
         ease:Power4.easeOut,
     })
 
-    gsap.from('#skills',
-    {
+    gsap.to('#skills',
+        {
         scrollTrigger:
         {
-            trigger:'#skills',
-            start:'20px bottom',
-            end:'bottom top',
-            
-            // markers:true,
+            trigger:'.second-container',
+            start:'50px bottom',
+            end:'bottom 20px',
             toggleActions:'play complete resume reset'
         },
         duration:'1',
         delay:'0.8',
-        opacity:0,
-        width:'0px',
+        opacity:1,
+        width:'100%',
         
         ease:Power4.easeOut,
+        })
+        
+
+    gsap.to('.about-img',
+    {
+        scrollTrigger:
+        {
+            trigger:'.second-container',
+            start:'50px bottom',
+            end:'bottom 20px',
+            // markers:true,
+            toggleActions:'play complete resume reset'
+        },
+        duration:'1',
+        delay:'1',
+        // width:'10rem',
+        flex:'1',
+        opacity:'1',
+        ease:Power4.easeOut,
+        
     })
+
+    // class toggle - for scrollbar color change
 
     ScrollTrigger.create({
         trigger: ".second-container",
         start: "top center",
         end: "bottom center",
-        onToggle: self => {
-            secondContainerToggled()
-        },
-        // onUpdate: self => {
-        //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
-        // }
-      });
+        onToggle: () => {
+            
+            document.body.classList.toggle('redScrollbar');
+        }
+        });
 }
 
 function thirdContainerAnimations()
