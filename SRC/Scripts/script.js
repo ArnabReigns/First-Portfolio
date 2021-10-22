@@ -97,21 +97,21 @@ function secondContainerAnimations()
 
     
 
-    gsap.from('#secondLottie',
-    {
-        scrollTrigger:
-        {
-            trigger:'.second-container',
-            start:'50px bottom',
-            end:'bottom 20px',
-            toggleActions:'play complete pause reset',
-        },
-        duration:'0.7',
-        x:'-100px',
-        opacity:'0',
-        ease:Power4.easeOut,
+    // gsap.from('#secondLottie',
+    // {
+    //     scrollTrigger:
+    //     {
+    //         trigger:'.second-container',
+    //         start:'50px bottom',
+    //         end:'bottom 20px',
+    //         toggleActions:'play complete pause reset',
+    //     },
+    //     duration:'0.7',
+    //     x:'-100px',
+    //     opacity:'0',
+    //     ease:Power4.easeOut,
         
-    })
+    // })
     gsap.from('#helloThere',
     {
         scrollTrigger:
